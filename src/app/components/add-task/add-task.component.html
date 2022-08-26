@@ -1,0 +1,28 @@
+<div *ngIf="showAddActor">
+    <form class="add-form" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label for="firstName"> First Name </label>
+            <input type="text" name="firstName" [(ngModel)]="firstName" id="text" placeholder="Add First Name"/>
+        </div>
+        <div class="form-control">
+            <label for="lastName"> Surname </label>
+            <input type="text" name="lastName"  [(ngModel)]="lastName" id="text" placeholder="Add Surname"/>
+        </div>
+        <input type="submit" value="Add Actor" class="btn btn-block">
+    </form>
+    <form class="add-form" (ngSubmit)="onUpdate()">
+        <div class="form-control">
+            <label for="id"> ID</label>
+            <input type="text" name="id" [(ngModel)]="id" id="id" placeholder="Add ID"/>
+        </div>
+        <div class="form-control">
+            <label for="updatedFirstName"> First Name </label>
+            <input type="text" name="updatedFirstName" [(ngModel)]="updatedFirstName" id="text" placeholder="Add First Name"/>
+        </div>
+        <div class="form-control">
+            <label for="updatedLastName"> Surname </label>
+            <input type="text" name="updatedLastName"  [(ngModel)]="updatedLastName" id="text" placeholder="Add Surname"/>
+        </div>
+        <input type="submit" value="Update ID" class="btn btn-block">
+    </form>
+</div>
